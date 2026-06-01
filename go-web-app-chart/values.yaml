@@ -1,0 +1,17 @@
+replicaCount: 2
+
+image:
+  repository: ahmed/go-web-app
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 8080
+  nodePort: 30007
+
+ingress:
+  enabled: true
+  className: nginx
+  host: finance.local

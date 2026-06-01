@@ -4,7 +4,7 @@ image:
   repository: ahmed/go-web-app
   tag: latest
   pullPolicy: IfNotPresent
-
+tag"latest"
 service:
   type: NodePort
   port: 80
